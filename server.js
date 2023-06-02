@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the MongoDB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/socialnetworkapi", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/MODULE-18", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,

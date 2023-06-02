@@ -7,7 +7,7 @@ const {
   deletePost,
   createReaction,
   deleteReaction
-} = require('../../controllers/post-controller');
+} = require('../controllers/post-controller');
 
 // Set up GET all and POST at /api/posts
 router
