@@ -15,14 +15,12 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Add routes, both API and view
-app.use(routes);
+app.use('/api', routes);
 
 // Connect to the MongoDB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/MODULE-18", {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/MODULE-18', {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false
+  useUnifiedTopology: true
 });
 
 // Start the API server
